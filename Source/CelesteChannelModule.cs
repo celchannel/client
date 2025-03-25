@@ -16,11 +16,10 @@ public class CelesteChannelModule : EverestModule
 
     public override void Load()
     {
-        // TODO: apply any hooks that should always be active
+        Everest.Events.Player.OnDie += player => new NewDeathRequest(player.Position, player.level).Perform();
     }
 
     public override void Unload()
     {
-        // TODO: unapply any hooks applied in Load()
     }
 }

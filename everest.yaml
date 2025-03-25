@@ -1,5 +1,5 @@
 - Name: CelesteChannel
-  Version: 2025.324.0
+  Version: 2025.325.0
   DLL: bin/CelesteChannel.dll
   Dependencies:
     - Name: EverestCore
